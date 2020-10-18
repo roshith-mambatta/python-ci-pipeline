@@ -1,0 +1,1 @@
+A CI pipeline for a PySpark project usually has three base stages: build, test, and deploy.
