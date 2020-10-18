@@ -13,3 +13,8 @@ pip install -e .
 1. The first command creates a Python environment. This will make a directory named venv in your project structure.
 2. The second command will activate the Python environment created.
 3. The last command will run setup.py and install/setup the project.
+
+
+python setup.py --version
+
+Specifying the project version in __version__ variable, allows you to access it during CI and use it to generate a path, where you will store artefacts (i.e. seed_module and main.py)
