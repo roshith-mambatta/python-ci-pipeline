@@ -1,4 +1,9 @@
 A CI pipeline for a PySpark project usually has three base stages: build, test, and deploy.
 
 
-Python 3.7-stretch is used as base image. This version is required if you want to install PySpark and run PySpark tests during the test phase. This pipeline is linear. Every stage runs after the previous one finishes successfully. Stages build and test run automatically whereas deploy should be triggered manually for the deployment to happen. AWS credentials are stored as environment variables in Git. When storing artifacts, we always overwrite the latest path content, with the latest changes.
+Python 3.7-stretch is used as base image.
+This version is required if you want to install PySpark and run PySpark tests during the test phase.
+This pipeline is linear. Every stage runs after the previous one finishes successfully. 
+Stages build and test run automatically whereas deploy should be triggered manually for the deployment to happen. 
+AWS credentials are stored as environment variables in Git.
+When storing artifacts, we always overwrite the latest path content, with the latest changes.
